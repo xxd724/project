@@ -1,0 +1,112 @@
+.article-detail-container{
+	padding: 30rpx 0 108rpx;
+	.detail-title{
+		font-size: 36rpx;
+		font-weight: bold;
+		padding: 0 30rpx;
+	}
+	.detail-header{
+		@include flex(flex-start);
+		margin-top: 20rpx;
+		padding: 0 30rpx;
+		.detail-logo{
+			flex-shrink: 0;
+			width: 80rpx;
+			height: 80rpx;
+			border-radius: 50%;
+			overflow: hidden;
+			image{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.detail-header-content{
+			width: 100%;
+			padding-left: 20rpx;
+			@include flex(space-between,column);
+			align-items: flex-start;
+			font-size: 24rpx;
+			.detail-header-content-title{
+				font-size: 28rpx;
+				color: #333;
+			}
+			.detail-header-content-info{
+				color: $uni-text-color-grey;
+				text{
+					margin-right: 20rpx;
+				}
+			}
+		}
+		.detail-header-button{
+			flex-shrink: 0;
+			padding: 0 30rpx;
+			height: 60rpx;
+			line-height: 60rpx;
+			border-radius: 14rpx;
+			font-size: 24rpx;
+			color: #fff;
+			background-color: $base-color;
+		}
+	}
+	.detail-content-container{
+		margin-top: 40rpx;
+		.detail-html{
+			padding: 0 30rpx;
+		}
+		//评论列表样式
+		.detail-comment{
+			margin-top: 60rpx;
+			.comment-title{
+				padding: 20rpx 30rpx;
+				font-size: 28rpx;
+				color: #666;
+				border-bottom: 2rpx solid #ddd;
+			}
+			.comment-content-container{
+				padding: 0 30rpx;
+				border-bottom: 2rpx solid #eee;
+			}
+			.no-data{
+				width: 100%;
+				text-align: center;
+				padding: 30rpx 0;
+				color: $uni-text-color-grey;
+				font-size: 28rpx;
+			}
+		}
+	}
+	.detail-bottom{
+		@include flex(flex-start);
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 88rpx;
+		box-sizing: border-box;
+		border-top:2rpx solid $bgc;
+		background-color: #fff;
+		.input-container{
+			@include flex();
+			margin-left: 20rpx;
+			padding: 0 20rpx;
+			flex-grow: 1;
+			height: 60rpx;
+			border: 2rpx solid #ddd;
+			border-radius: 18rpx;
+			text{
+				font-size: 24rpx;
+				color: $uni-text-color-grey;
+			}
+		}
+		.detail-bottom-icons{
+			display: flex;
+			flex-shrink: 0;
+			padding: 0 20rpx;
+			.detail-bottom-icon-box{
+				position: relative;
+				width: 88rpx;
+				@include flex(center);
+			}
+		}
+	}
+}

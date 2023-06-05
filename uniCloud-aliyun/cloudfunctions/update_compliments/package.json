@@ -1,0 +1,7 @@
+{
+  "name": "update_compliments",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}
